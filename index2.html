@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/core.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="menu">
+                <header>
+                    <div class="container">
+                        <div class="menu_inner">
+                            <div class="logo">
+                                <img src="img/menu/logo.png" alt="">
+                            </div>
+                            <nav>
+                                <ul>
+                                    <li><a href="">Каталог</a></li>
+                                    <li><a href="">Сервис</a></li>
+                                    <li><a href="">Помощь и обслуживание</a></li>
+                                    <li><a href="">Оплата и доставка</a></li>
+                                </ul>
+                            </nav>
+                            <div class="menu_buttons">
+                                <a href=""><img src="img/menu/shape.png" alt="shape"></a>
+                                <a href=""><img class="shop" src="img/menu/shop.png" alt="shop"></a>
+                                <a class="languages" href=""><span>ru</span> / en</a>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            </div>
+            <div class="catalog">
+                <div class="container">
+                    <h2 class="katalog__title">Каталог</h2>
+                    <div class="catalog__radio-box">
+                        <div class="catalog__radio-box1">
+                            <input class="radio-modf__input catalog-radio__input1 " type="radio" name="catalog__radio" id="radio__input1">
+                            <label onclick="chooseRadio1()" id="catalog-radio__label1" class="radio-modf__label catalog-radio__label" for="radio__input1">Готовые <br> салоны</label>
+                            <div id="radio-line" class="line catalog-radio__line"></div>
+                        </div>
+                        <div class="catalog__radio-box2">
+                            <input class="radio-modf__input catalog-radio__input2 " type="radio" name="catalog__radio" id="radio__input2">
+                            <label onclick="chooseRadio2()" id="catalog-radio__label2" class="radio-modf__label catalog-radio__label" for="radio__input2">Опции для вашего g-class</label>
+                            <div id="radio-line2" class="line catalog-radio__line2"></div>
+                        </div>
+                    </div>
+                    <div id="catalog__body1" class="catalog__body1">
+                        <div class="catalog-body1__box">
+                            <div class="catalog-box__item catalog-box__item1">
+                                <img src="img/catalog/catalog1.png" alt="catalog1">
+                            </div>
+                            <div class="catalog-box__item catalog-box__item2">
+                                <div class="catalog-item2__item">
+                                    <div class="catlalog-item2-item__item1">
+                                        <h3 class="catalog-item2__title">дизайн <span>VENOM</span></h3>
+                                        <p class="catalog-item2__subtitle">Артикул: 464-234-00</p>
+                                    </div>
+                                    <div class="catlalog-item2-item__item2">
+                                        <div class="catalog--item2__items">
+                                            <div class="catalog--item2__item1">
+                                                <p class="catalog__time">Срок установки</p>
+                                                <p class="catalog__time2">21 день</p>
+                                                
+                                                <p class="catalog__price">Цена услуги от</p>
+                                                <p class="catalog__price2">118 000 000 руб.</p>
+                                            </div>
+                                            <div class="catalog--item2__item2">
+                                                <a href="" class="button white">Подробнее</a>
+                                                <a href="" class="button">Купить</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog-body1__box">
+                            <div class="catalog-box__item catalog-box__item1">
+                                <img src="img/catalog/catalog2.jpg" alt="catalog1">
+                            </div>
+                            <div class="catalog-box__item catalog-box__item2">
+                                <div class="catalog-item2__item">
+                                    <div class="catlalog-item2-item__item1">
+                                        <h3 class="catalog-item2__title">дизайн <span class="kalahari__span">KALAHARI</span></h3>
+                                        <p class="catalog-item2__subtitle">Артикул: 464-234-00</p>
+                                    </div>
+                                    <div class="catlalog-item2-item__item2">
+                                        <div class="catalog--item2__items">
+                                            <div class="catalog--item2__item1">
+                                                <p class="catalog__time">Срок установки</p>
+                                                <p class="catalog__time2">21 день</p>
+                                                
+                                                <p class="catalog__price">Цена услуги от</p>
+                                                <p class="catalog__price2">118 000 000 руб.</p>
+                                            </div>
+                                            <div class="catalog--item2__item2">
+                                                <a href="" class="button white">Подробнее</a>
+                                                <a href="" class="button yellow">Купить</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog-body1__box">
+                            <div class="catalog-box__item catalog-box__item1">
+                                <img src="img/catalog/catalog3.jpg" alt="catalog1">
+                            </div>
+                            <div class="catalog-box__item catalog-box__item2">
+                                <div class="catalog-item2__item">
+                                    <div class="catlalog-item2-item__item1">
+                                        <h3 class="catalog-item2__title">дизайн <span class="fast__span">FAST</span></h3>
+                                        <p class="catalog-item2__subtitle">Артикул: 464-234-00</p>
+                                    </div>
+                                    <div class="catlalog-item2-item__item2">
+                                        <div class="catalog--item2__items">
+                                            <div class="catalog--item2__item1">
+                                                <p class="catalog__time">Срок установки</p>
+                                                <p class="catalog__time2">21 день</p>
+                                                
+                                                <p class="catalog__price">Цена услуги от</p>
+                                                <p class="catalog__price2">118 000 000 руб.</p>
+                                            </div>
+                                            <div class="catalog--item2__item2">
+                                                <a href="" class="button white">Подробнее</a>
+                                                <a href="" class="button open__red">Купить</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="catalog__body2" class="catalog__body1">
+                        lperfljrfjq
+                    </div>
+                </div>
+            </div>
+            <div class="offer">
+                <div class="container">
+                    <h2>Получить предложение</h2>
+                    <p class="fill">Заполните форму обратной связи и наш <br>менеджер свяжется с вами в ближайшее <br>время.</p>
+                    <form action="">
+                        <div class="form_group1">
+                            <input class="offer_input" id="offer_input1" type="text">
+                            <label class="offer_label1" for="offer_input1">Имя</label>
+                        </div>
+                        <div class="form_group2">
+                            <input class="offer_input2" id="offer_input2" type="text">
+                            <label class="offer_label2" for="offer_input2">Телефон</label>
+                        </div>
+                        <button class="button">Отправить</button>
+                    </form>
+                    <p class="send">Отправляя форму вы соглашаетсь с <br><a href="">"Политикой конфиденциальности"</a></p>
+                    <div class="line2"></div>
+                    <div class="offer_inner">
+                        <div class="offer1">
+                            <div class="a1">
+                                <img src="img/offer/logo2.png" alt="logo">
+                            </div>
+                            <p>А1 - мы создаём комфорт.</p>
+                        </div>
+                        <div class="company">
+                            <p><span>Компания А1 официальный партнер Mercedes-Benz.</span> <br> <br>Автомобили Mercedes-Benz, произведенные и переоборудованные в компании А1,<br>продаются у всех официальных дилеров марки с сохранением официальной гарантии.</p>
+                        </div>
+                    </div>
+                    <div class="offer_inner2">
+                        <div class="politic">
+                            <a href="">Политика конфиденциальности</a>
+                            <p>Дела идут, <a href="">Контора</a> пишет..</p>
+                        </div>
+                        <div class="footer">
+                            <div class="venom">
+                                <ul>
+                                    <li><a href="">venom</a></li>
+                                    <li><a href="">Kalahari</a></li>
+                                    <li><a href="">Fast</a></li>
+                                    <li><a href="">Individual</a></li>
+                                </ul>
+                            </div>
+                            <div class="service">
+                                <ul>
+                                    <li><a href="">Сервис</a></li>
+                                    <li><a href="">Помощь и обслуживание</a></li>
+                                </ul>
+                            </div>
+                            <div class="web">
+                                <ul class="web_sites">
+                                    <li><a href="">VKontakte</a></li>
+                                    <li><a href="">Telegram</a></li>
+                                    <li><a href="">Instagram</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="js/main2.js"></script>
+</html>
